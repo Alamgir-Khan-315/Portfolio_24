@@ -1,0 +1,27 @@
+[
+    {
+        "s_id":"01",
+        "s_title":"Web design",
+        "s_desc":"Web desgning and development is thr process of building...."
+    },
+    {
+        "s_id":"02",
+        "s_title":"Graphics design",
+        "s_desc":"Web desgning and development is thr process of building...."
+    },
+    {
+        "s_id":"03",
+        "s_title":"Social media",
+        "s_desc":"Web desgning and development is thr process of building...."
+    },
+    {
+        "s_id":"04",
+        "s_title":"Contant writing",
+        "s_desc":"Web desgning and development is thr process of building...."
+    },
+    {
+       "s_id":"05",
+        "s_title":"Vector art",
+        "s_desc":"Web desgning and development is thr process of building...."
+    }
+]
