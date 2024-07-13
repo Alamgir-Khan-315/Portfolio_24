@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { TiThMenu } from "react-icons/ti";
 import { MdOutlineHorizontalRule } from "react-icons/md";
+import { FaArrowCircleUp } from "react-icons/fa";
 
 const Navbar = () => {
 
@@ -18,7 +19,7 @@ const Navbar = () => {
 
         {/* large screen navbar */}
         <div className="list md:flex md:pt-3">
-          <ul className='flex hidden       md:flex  md:flex-row gap-7 cursor-pointer'>
+          <ul className='hidden       md:flex  md:flex-row gap-7 cursor-pointer'>
             <AnchorLink offset={50} href='#home'> <li><p onClick={() => setMenu("home")}>Home</p> {menu==="home"?<MdOutlineHorizontalRule className='w-full size-6 text-orange-600' />:<></>} </li></AnchorLink>
             <AnchorLink href='#about'> <li><p onClick={() => setMenu("about")}>About me</p> {menu==="about"?<MdOutlineHorizontalRule className='w-full size-6 text-orange-600'/>:<></>} </li></AnchorLink>
             <AnchorLink offset={50} href='#service'> <li><p onClick={() => setMenu("service")}>Service</p> {menu==="service"?<MdOutlineHorizontalRule className='w-full size-6 text-orange-600'/>:<></>} </li></AnchorLink>
@@ -41,10 +42,16 @@ const Navbar = () => {
         }
 
         <div className="right flex gap-5">
-        <AnchorLink offset={50} href='#contact'><div className="button mr-[30px] p-1 px-3 py-2 rounded-[50px] bg-gradient-to-r from-pink-700 to-90% to-orange-400 cursor-pointer 
+        <AnchorLink offset={50} href='#contact'><div className="button mr-[10px] md:-mr-[10px] p-1 px-3 py-2 rounded-[50px] bg-gradient-to-r from-pink-700 to-90% to-orange-400 cursor-pointer 
             md:px-4 hover:scale-105 transition-all">Contact With Me</div></AnchorLink>
           {/* icon small screen */}
-          <div onClick={() => setMobile_menu(!mobile_menu)} className="icon right-3 top-6 fixed text-xl md:hidden flex items-center"><TiThMenu /></div>
+          <div onClick={() => setMobile_menu(!mobile_menu)} className="cursor-pointer icon right-3 top-6 text-xl fixed md:hidden flex items-center"><TiThMenu /></div>
+
+          {/* Go up */}
+          <AnchorLink href='#home'>
+          <div className='Go_UP md:flex hover:scale-105 transition-all fixed p-1 px-3 py-2 rounded-[50px] bottom-[10px] right-[10px] md:right-[20px] text-2xl bg-gradient-to-r from-pink-700 to-90% to-orange-400'><FaArrowCircleUp /></div>
+          </AnchorLink>
+          
         </div>
       </div>
 
