@@ -29,16 +29,16 @@ const Contact = () => {
 
         <form className="form md:w-full flex flex-col gap-1">
           <label htmlFor="Your Name">Your Name</label>
-          <input className='bg-gray-600 p-2 m-1 rounded-lg' placeholder='Enter your name' type="text" required />
-          <label htmlFor="Your Name">Your Email</label>
-          <input className='bg-gray-600 p-2 m-1 rounded-lg' placeholder='Enter your email' type="email" required />
+          <input id='C_Name' className='bg-gray-600 cursor-pointer p-2 m-1 rounded-lg' placeholder='Enter your name' type="text" required />
+          <label htmlFor="Your Email">Your Email</label>
+          <input id='C_Email' className='bg-gray-600 p-2 cursor-pointer m-1 rounded-lg' placeholder='Enter your email' type="email" required />
           <label htmlFor="Your Name">Write your message here</label>
-          <textarea className='bg-gray-600 p-2 m-1 rounded-lg' placeholder='Enter your message' name="message" rows="6" id=""></textarea>
+          <textarea id='C_Comment' className='bg-gray-600 cursor-pointer p-2 m-1 rounded-lg' placeholder='Enter your message' name="message" rows="6" id=""></textarea>
         </form>
 
       </div>
 
-      <div type='submit' className="button p-2 min-w-[100px] max-w-[130px] mx-auto mt-[30px] text-center hover:scale-105 transition-all rounded-[50px] bg-gradient-to-r from-pink-700 to-90% to-orange-400">Submit now</div>
+      <div type='submit' className="cursor-pointer button p-2 min-w-[100px] max-w-[130px] mx-auto mt-[30px] text-center hover:scale-105 transition-all rounded-[50px] bg-gradient-to-r from-pink-700 to-90% to-orange-400">Submit now</div>
       <div className='h-[50px]'></div>
 
     </div>
