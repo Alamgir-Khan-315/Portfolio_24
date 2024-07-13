@@ -38,7 +38,7 @@ const Contact = () => {
 
       </div>
 
-      <div type='submit' className="button p-2 min-w-[100px] max-w-[130px] mx-auto mt-[30px] text-center hover:scale-105 transition-all rounded-[50px] bg-gradient-to-r from-pink-700 to-90% to-orange-400">Submit now</div>
+      <div type='submit' className="cursor-pointer button p-2 min-w-[100px] max-w-[130px] mx-auto mt-[30px] text-center hover:scale-105 transition-all rounded-[50px] bg-gradient-to-r from-pink-700 to-90% to-orange-400">Submit now</div>
       <div className='h-[50px]'></div>
 
     </div>
